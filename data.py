@@ -33,7 +33,6 @@ class Data:
             "PG",
             "TRV",
             "UNH",
-            "UTX",
             "VZ",
             "V",
             "WBA",
@@ -80,7 +79,6 @@ class Data:
             "PG",
             "TRV",
             "UNH",
-            "UTX",
             "VZ",
             "V",
             "WBA",
@@ -94,9 +92,9 @@ class Data:
             df = pd.read_csv(f"data/{ticker}.csv", index_col="Date", parse_dates=True)
             stock_data[ticker] = df
 
-        training_data_time_range = ("2009-01-01", "2015-12-31")
-        validation_data_time_range = ("2016-01-01", "2016-12-31")
-        test_data_time_range = ("2017-01-01", "2020-05-08")
+        training_data_time_range = ("2009-01-01", "2023-12-31")
+        validation_data_time_range = ("2016-01-01", "2020-12-31")
+        test_data_time_range = ("2017-01-01", "2023-05-08")
 
         self.training_data = {}
         self.validation_data = {}
