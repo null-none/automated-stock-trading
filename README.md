@@ -33,5 +33,13 @@ agents_metrics = [
 ]
 compare_and_plot_agents(agents_metrics, list(agents.keys()))
 
+```
 
+
+```python
+
+from predict import PredictStockPrice
+
+predict_stock_price = PredictStockPrice("CSCO")
+predicted_prices = predict_stock_price.stock_price()
 ```
